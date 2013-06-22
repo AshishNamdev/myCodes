@@ -39,7 +39,11 @@ public class Diff_by_K {
         this.in=in;
     }
     
-    public int findSetOfDiff()
+    public void getDiff()
+    {
+        return diff;
+    }
+    public void findSetOfDiff()
     {
         for(int i=0;i<in.length;i++)
         {
@@ -49,7 +53,7 @@ public class Diff_by_K {
                     this.diff++;
             }
         }
-        return diff;
+        
     }  
     
 
@@ -69,10 +73,11 @@ public class Diff_by_K {
         }
         
         String tmp[]=str.split(" ");
-        dfk.setIn(tmp);    
+        dfk.setIn(tmp);
         dfk.setN(Integer.parseInt(tmp[0]));
         dfk.setK(Integer.parseInt(tmp[1]));
-        System.out.println(dfk.findSetOfDiff());    
+        dfk.findSetOfDiff();
+        System.out.println(dfk.getDiff());    
         
     }
 }
