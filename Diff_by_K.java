@@ -1,5 +1,21 @@
 /**
+ * Problem statement :
+ * Given N numbers , [N<=10^5] we need to count the total pairs of numbers that have a difference of K. [K>0 and K<1e9]
+
+Input Format:
+1st line contains N & K (integers).
+2nd line contains N numbers of the set. All the N numbers are assured to be distinct.
+Output Format:
+One integer saying the no of pairs of numbers that have a diff K.
+
+Sample Input #00:
+5 2
+1 5 3 4 2
+
+Sample Output #00:
+3
  *
+ * 
  * @author Ashish Namdev 
  */
 import java.io.BufferedReader;
