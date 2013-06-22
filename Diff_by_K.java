@@ -54,10 +54,8 @@ public class Diff_by_K {
     
 
     
-    public static void main(String[] args) {
-        /*String str = null;      
-        BufferedReader br =new BufferedReader(new InputStreamReader(System.in));
-        */
+    public static void main(String[] args) 
+    {
         String str=null;
         Diff_by_K dfk=new Diff_by_K();
         BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
@@ -76,33 +74,5 @@ public class Diff_by_K {
         dfk.setK(Integer.parseInt(tmp[1]));
         System.out.println(dfk.findSetOfDiff());    
         
-        /*
-        try {
-            str=br.readLine();
-        } catch (IOException ex) {
-            System.out.println("IO Exception :"+ex.getMessage());
-        }
-        String in []=str.split(" ");
-        n=Integer.parseInt(in[0]);
-        k=Integer.parseInt(in[1]);
-        
-        System.out.println("n is :"+n);
-        System.out.println("k is :"+k);
-        
-        /*
-        for (int i = 0; i < n; i++) {
-            System.out.print(set[i]);
-        }
-        
-        for(int i=2;i<in.length;i++)
-        {
-            for(int j=i+1;j<in.length;j++)
-            {
-               if(Math.abs(Integer.parseInt(in[i])-Integer.parseInt(in[j]))==k)                 
-                    diff++;
-            }
-        }
-        System.out.println("set of diff by "+k+ " is :" +diff);
-        */
     }
 }
